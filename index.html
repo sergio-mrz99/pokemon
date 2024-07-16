@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>BUSCADOR POKÉMON</h1>
+
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Cambiar al modo oscuro</button>
+
+    <input type="text" id="search-input" placeholder="Buscar Pokémon" onkeydown="if (event.key === 'Enter') searchPokemon()">
+
+    <button onclick="searchPokemon()">BUSCAR!!</button>
+
+    <div id="pokemon-list"></div>
+
+    <script src="./program.js"></script>
+</body>
+</html>
